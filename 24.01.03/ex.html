@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table 표를 만들 때 처음에 선언한다.
+    tr 행
+    td 행의 내용
+    th 열의 제목
+    caption 표의 제목
+    thead 머리글 그룹
+    tfoot 꼬리글 그룹
+    tbody 본문 구름
+    colgroup > col 테이블 각 셀의 크기 , 스타일을 지정할 때 사용 
+    colspan 병합
+    rowspan 병합-->
+
+
+    <table border="1" width="400;">
+        <caption>우리멤버</caption>
+        <colgroup>
+        <col width="100">
+        <col>
+        <col width="100">
+    
+    </colgroup>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th colspan="2">나이, 사는 곳</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">홍길동, 홍길자</td>
+                <td>20세</td>
+                <td>장기동</td>
+            </tr>
+            <tr>
+                <!-- <td>홍길자</td> -->
+                <td>25세</td>
+                <td>풍무동</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>

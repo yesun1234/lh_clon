@@ -1,0 +1,27 @@
+input type = "text"
+input type = "password"
+
+input type = "button"
+input type = "sumbit"
+input type = "reset"
+
+button type = "button"
+
+select > option 선택
+input type = "radio" 선택
+input type = "checkbox" true - false
+input type  = "file"
+textarea - 본문 쓸 때 줄바꿈
+
+조건문
+선택문
+반복문
+a = 1;
+while(a<10){
+console.log(a)
+a++;
+}
+
+1-20까지를 출력하되 
+홀수는 파랑색
+짝수는 빨강색으로 출력하라.

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const uName = prompt("당신의 이름은?", "")
+        const uHeight = prompt("당신의 키는?","0");
+        const uWeight = prompt("당신의 몸무게는?","0");
+
+        const normalWeight = (uHeight -100)*0.9;
+        let result = uWeight >= normalWeight -5 && uWeight <= normalWeight +5; //오차범위 +-5
+        result = result ? "적정체중입니다" : "적정체중이 아닙니다.";
+
+
+        document.write(uName + "님은" + result);
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+git 최초설정
+
+git config --global user.name "yesun"
+git config --global user.email"dptj1106@naver.com"
+
+기본 브랜치명 설정
+git config --global init.defaultBranch main
+
+git init 폴더관리하겠다 선언
+git status 상황확인
+	Fatal: detected duvious ownership .. 에러가 출력되면
+	git config --global --as safe.directory "디렉터명"
+git add "파일명" --폴더내의 모든 파일을 등록 git add .
+git commit 
+git commit -m"커밋내용"
+git으로 관리하지 않은 파일 .gitignore
+git log
+git branch 
+
+git branch main2 --> main2 제작
+git brancn --> 현재 branh 목록 확인
+*main -->현재 위치한 브런치
+main2
+git checkout main2 (main2로 브랜치 전환)
+git add .
+ git commit -m "메세지"
+
+되돌리는 방법
+reset : 원하는 시점으로 돌아간 후 내역을 지운다.
+revert : 되돌리기 원하는 시점의 커밋을 거꾸로 실행한다.
+
+
+입력시작 : i 명령어 입력모드에서 텍스트입력모드로 전환
+입력종료 : esc 텍스트 입력모드로 전환
+저장없이 종료 : :q
+저장없이 강제 종료 : :q!
+저장하고 종료 : :wq
+위로 스크롤: k
+아래 스크롤: j
+
+gitignore 사용법
+-최상위 폴더 /파일이름.확장자
+-확장자가 .exe 모든파일 : *.exe
+-특정지정할 파일 : 파일이름.확장자
+
+함수의 호이스팅(면접볼 때)
+
+화살표 함수
+
+객체
+모든 사물은 객체
+
+tv객체(Object){
+-property
+ -너비
+ -높이
+ -인치
+ -제품명
+ -무게
+
+-method
+ -켜다()
+ -끄다()
+ -볼륨을 높이다()
+ -볼륨을 줄이다()
+}
+
+tv객체(Object).너비
+tv객체(Object).끄다
+
+자바스크립트가 내장하고 있는 객체: 내장객체
+string, date, array(배열), math
+
+브라우저 객체모델
+window, screen, location, history, navigator, 
+
+getFullYear() 연도정보
+getMonth()[0~11월]
+getDate()
+getDat()[일:0~토:6]
+getHour()시
+getMinutes()분
+getSecond()초
+getMillseconds()밀리초(1/000)
+getTime() 1970년 1월 1일 경과된 시간을 밀리초로 환산해서 표기함
+toGMTring()GMT 표준 표기 방식 문자 데이터로 반환
+set함수명()수정하거나 새로 셋팅할 떄
+
+

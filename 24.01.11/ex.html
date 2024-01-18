@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            width: 150px;
+        }
+        li:hover{
+            background-color: yellowgreen;
+        }
+       
+        li:first-child,
+        li:last-child{
+            background:#dddddd;
+        }
+        li:nth-child(2n-1){
+            background:#dddddd;
+        }
+        
+        /*
+        
+        :nth-child(순서)
+        순서에 odd, even으로 홀짝을 쓸 수 있음.
+        또 2n, 2n-1로 써도 됨.*/
+        /*, . > " " 차이 알기*/
+    </style>
+</head>
+<body>
+<ol>
+    <li class="f">1번째</li>
+    <li>2번째</li>
+    <li>3번째</li>
+    <li>4번째</li>
+    <li>5번째</li>
+</ol>
+</body>
+</html>

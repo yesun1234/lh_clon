@@ -1,0 +1,11 @@
+기본타입			참조타입
+
+숫자number		객체object
+문자열string		배열array
+불린값boolean		함수funtion
+undefined		정규표현식
+null
+
+숫자
+
+

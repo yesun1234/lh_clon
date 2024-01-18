@@ -1,0 +1,9 @@
+.box1{
+    border: 5px solid #000;
+}
+.box2{
+border: 2px dashed blue;
+border-top-right-radius: 10px;
+border-bottom-left-radius:10px ;
+background-color: greenyellow;
+}

@@ -1,0 +1,25 @@
+.box{
+    width: 500px;
+    height: 100px;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.box span{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 20px 10px;
+}
+.ha{
+    letter-spacing: -2px;
+    line-height: 30px;
+}
+.he{
+    word-spacing: 10px;
+    text-indent: 30px;
+}
+

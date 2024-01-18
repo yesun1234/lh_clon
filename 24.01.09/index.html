@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bigbox{
+       width: 800px;
+       height: 800px;
+       overflow: hidden;
+        }
+    .bigbox img{
+    width: 100%;
+}
+    .sbox{
+    width: 800px;
+    height: 160px;
+    overflow: hidden;
+
+}
+    .sbox img{
+        width: 160px;
+        float: left;
+    }
+
+    #popup{
+        width: 400px;
+        height: 300px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 200px;
+        background-color: #efefef;
+        left: calc(50% - 200px);
+        text-align: center;
+        z-index: 100;
+        display: none;
+    }
+</style>
+<body>
+    <div class="bigbox">
+        <img src="./images/wedding.jpg" alt="01" id="bigbox">
+    </div>
+    <div class="sbox">
+        <img src="./images/wedding.jpg" alt="01" onclick="viewImag(wedding01)">
+        <img src="./images/wedding3.webp" alt="3" onclick="viewImag(wedding3)">
+        <img src="./images/wedding4.jpg" alt="4" onclick="viewImag(wedding4)">
+        <img src="./images/wedding5.webp" alt="5" onclick="viewImag(wedding5)">
+        
+    </div>
+    <button id="vpopup" onclick="viewPopup();">팝업창 보이기</button>
+    <div id="popup">
+        <h1>팝업창 입니다</h1>
+        <button id="close" onclick="hiddenPopup()">닫기</button>
+    </div>
+    <script>
+        function viewImg(str){
+            document.getElementById('bigbox').src='images/' +str +'jpg' ;
+        }
+        function viewPopup(){
+            document.getElementById("popup").style.display="block";
+        }
+        function hiddenPopup(){
+            document.getElementById("popup").style.display="none";
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+class Person{
+    String name;
+    String gender;
+    String hair;
+    int age;
+
+    void walking(){
+
+        
+    }
+    void eatting(){
+
+    }
+    void wha(){
+
+    }
+}
+
+변수 = new person();
+변수.name;

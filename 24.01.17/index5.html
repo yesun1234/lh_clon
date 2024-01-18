@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+    /*$(document}.reday(function)(){})*/
+        $(function(){
+            $(`#mybox`).click(function(){
+                let str = prompt("이름을 입력하세요");
+                document.write("반갑습니다" + str + "님")
+            })
+        });//jquery
+
+        function clickview(){
+            alert("눌렀냐?")
+        }
+</script>
+<body>
+<div class="box" id="mybox" onclick="clickview()">
+    박스</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding-top: 30px;  
+            background: url('../Device Closed/Motorola\ Moto\ 360\ Men\ Black\ +\ Black\ Closed.png') no-repeat center;
+        }
+        .clock{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+           
+        }
+        .clock> .number::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .clock .number >.number1{
+            left: 50%;
+            margin-right: auto;
+            padding-top: 30px;
+            position: absolute;
+        }
+        .clock .number >.number2{
+            left: calc(50% + 150px);
+            position: absolute;
+            top: calc(50% - 230px);
+        }
+        .clock .number >.number3{
+            left: 50%;
+            position: absolute;
+            bottom: 530px;
+        }
+        .clock .number >.number4{
+            left: 35%;
+            position: absolute;
+            top: calc(50% - 230px);
+        }
+
+        .hour{
+            width: 130px;
+            left: 50%;
+            margin-right: auto;
+            position: absolute;
+            border: 1px solid #333;
+            top: calc(50% - 220px);
+
+        }
+        .minute{
+            width: 130px;
+            left: 50%;
+            margin-right: auto;
+            position: absolute;
+            border: 1px solid #333;
+            top: calc(50% - 220px);
+            
+
+        }
+    </style>
+</head>
+<body>
+<div class="clock">
+    <div class="hour"></div>
+    <div class="minute"></div>
+    <div class="number">
+        <span class="number1">12</span>
+        <div class="number2">3</div>
+        <div class="number3">6</div>
+        <div class="number4">9</div>
+    </div>
+    </div>
+
+</html>

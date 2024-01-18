@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="today">
+        오늘은 
+        <span id="year"></span>년
+        <span id="month"></span>월
+        <span id="day"></span>일
+        <span id="week"></span>요일 입니다.
+    </p>
+    <br>
+    <p id="time">
+        지금 시간은
+        <span id="tIme"></span>
+        <span id="hour"></span>시
+        <span id="minute"></span>분 입니다.
+    </p>
+    <script>
+        const tday = new Date();
+        
+        document.getElementById("year").innerHTML=tday.getFullYear();
+        document.getElementById("month").innerHTML=tday.getMonth()+1;
+        document.getElementById("day").innerHTML=tday.getDate();
+        document.getElementById("week").innerHTML=getWeek(tday.getDay());
+        
+        function getWeek(wk){
+            let w;
+            switch(wk){
+                case 0: w="일"; break;
+                case 1: w="월"; break;
+                case 2: w="화"; break;
+                case 3: w="수"; break;
+                case 4: w="목"; break;
+                case 5: w="금"; break;
+                case 6: w="토"; break;
+            }return w;
+        }
+    </script>
+    <script>
+        const time = new Date();
+        document.getElementById("hour").innerHTML=time.getHours();
+        document.getElementById("minute").innerHTML=time.getMinutes();
+        document.getElementById("tIme").innerHTML=time.getTime(time.getHours());
+    </script>
+
+    <script>
+        const today = new Date();
+        const daylist = ["일", "월", "화", "수", "목", "금", "토"];
+        const h = today.getHours();
+        console.log(h);
+        if(hour>= 12 && h<24){
+            h = "오후" +h - 12;
+        }else{
+            hour = "오전" + h;
+        }
+        const minute = today.getMinutes();
+    </script>
+</body>
+</html>

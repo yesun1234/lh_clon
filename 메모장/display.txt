@@ -1,0 +1,8 @@
+disply(외워야할 것)
+
+inline
+inline-block
+block
+none <==> visibility:hidden
+flex
+grid

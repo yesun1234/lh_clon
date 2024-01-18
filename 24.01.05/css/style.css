@@ -1,0 +1,27 @@
+.box{
+    width:300px;
+    height: 300px;
+    border: 1px solid #333;
+    /* background-color: rgba(127,255,212,0.2);
+    background-image: url("./image/660026.png");
+    background-repeat: no-repeat; 
+    background-attachment: scroll; /*scroll(기본), fixed, local, inherit*/
+    /* overflow: auto; scroll, auto
+    overflow-x, overflow-y
+
+    background-position: center; x축쓰고 y축 쓴다 */
+    /*repeat, no-repeat, repeat-x, repeat-y*/
+    /* cpacity: 0.2; */
+
+    background: rgba(127, 255, 212, 0.4) url("./image/660026.png") repeat center scroll;
+    overflow: auto;
+    background-size: 40%;
+} 
+
+.box2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background: url("./image/KakaoTalk_20240105_101347798_01.png") repeat-y center scroll;
+    overflow: auto;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wrcs()idth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 50px;
+    }
+.container{
+    padding-top: 30px;
+    width: 1200px;
+    height: 500px;
+    background-color: #efefef;
+    margin: 40px auto;
+    text-align: center;
+
+}
+.rcs-com{
+    width: 800px;
+    height: 200px;
+    background-color: #fff;
+    margin: 10px auto;
+    padding-top: 30px;
+}
+
+.me{
+    width: 1200px;
+    height: 80px;
+    padding-top: 50px;
+  
+}
+
+
+.me::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+button{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+#com-txt{
+    text-align: center;
+    font-weight: 100px;
+    font-size: 80px;
+}
+
+</style>
+<body>
+  
+    <section class="container">
+        <h1>1-10 사이의 숫자를 맞춰보세요</h1>
+        <div class="rcs-com" id="com-txt" ></div >
+          <div class="me">
+            <div class="me-btn">
+            <button type="submit" onclick="rcs(0)">1</button>
+            <button type="button" onclick="rcs(1)">2</button>
+            <button type="button" onclick="rcs(2)">3</button>
+            <button type="button" onclick="rcs()">4</button>
+            <button type="button" onclick="rcs()">5</button>
+            <button type="button" onclick="rcs()">6</button>
+            <button type="button" onclick="rcs()">7</button>
+            <button type="button" onclick="rcs()">8</button>
+            <button type="button" onclick="rcs()">9</button>
+            <button type="button" onclick="rcs()">10</button>
+            
+            </div>
+        </div>
+        
+
+    </section>
+    <script>
+        function rcs(n){
+            const com = Math.floor(Math.random()*10);
+            let rcsArray = ['1', '2','3','4','5','6','7','8','9','10'];
+        
+
+            document.getElementById("com-txt").innerHTML = rcsArray[n];
+            
+        }
+    </script>
+        
+    
+    
+</body>
+</html>

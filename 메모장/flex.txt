@@ -1,0 +1,21 @@
+부모 태그가 가져야 할 것들
+
+display: flex
+justify-content
+align-items
+
+flex-dirextion 
+flex-wrap
+
+flex-flow
+
+align-content
+
+
+자식태그가 가져야할 것들
+order
+flex-grow
+flex-shrink
+flex-basis
+flex(축약)
+align-self

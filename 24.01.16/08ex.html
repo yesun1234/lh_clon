@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+    .container{
+        width: 100%;
+    }
+    .box1{
+        width: 500px;
+        height: 500px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 90px;
+    }
+    .container2{
+        margin-top: 0px;
+        display: table;
+        width: 500px;
+
+    }
+
+    .container .button{
+        width: 80px;
+        height: 30px;
+        background-color: #aca8a8;
+        margin: 30px;
+
+   
+    }
+    
+</style>
+<body>
+    <div class="container">
+            <div class="box1" id="box1"></div>
+        <div class="container2">
+            <button name="next" onclick="next(0)">이전</button>
+            <button name="next2" onclick="next2(1)">다음</button>
+        </div>
+
+    </div>
+    <script>
+ 
+        let photo = 0;
+        function next(n){
+            if(n){
+                photo ++;
+            }else{
+                photo --;
+            }document.getElementById("box1").style.backgroundImage = url[photo];
+        }
+        function next2(){
+            photo --;
+            document.getElementById("box1").style.backgroundImage = url[photo];
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+    <style>
+        *{ box-sizing:border-box}
+        body{margin: 20px;
+        color: #000
+    }
+    .box{
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        border: 1px dotted #000;
+        
+        margin: 20px auto;
+        text-align: center;
+        /* vartical-algin: middle; 새로정렬이고 inline 안에서만 사용 가능*/
+        /*left, right, center, j    ustify*/
+    }
+    a{text-decoration: none;
+    }
+    .ye{letter-spacing: -2px;
+    width: 200px;
+line-height: 30px;
+text-indent: 20px;}
+
+    .te{word-spacing: 10px;
+    width: 200px;
+line-height: 30px;
+text-indent: -10px;
+}
+    /* text-decoration: none; overline; line-throught밑줄제거
+       text-decoration: overline
+       text-color*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="span-box">asd</span>
+        <p><a href="http://naver.com">네이버로 이동</a></p>
+        <p><a href="http://nate.com">네이트로 이동</a></p>
+    </div>
+    <p class="ye">대법원장은 국회의 동의를 얻어 대통령이 임명한다. 대통령은 제1항과 제2항의 처분 또는 </p>
+        <p class="te">대법원장은 국회의 동의를 얻어 대통령이 임명한다. 대통령은 제1항과 제2항의 처분 또는 </p>
+
+        <div class="bo"></div>
+</body>
+</html>

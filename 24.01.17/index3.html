@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media print{
+        .design{
+            display: none;
+        }
+        .multi-column h1{
+            display: none;
+        }
+    }
+    .multi-column{
+        width: 600px;
+        column-count: 3;
+        column-gap: 50px;
+        /* column-rule-style: dashed;
+        column-rule-width: 1px;
+        column-rule-color: red; */
+        column-rule: 1px solid #ddd;
+    }
+    multi-column h1{
+        column-span: all;
+    }
+    .design{
+        height: 50px;
+        width: 100%;
+        background-color: red;
+    }
+</style>
+<body>
+    <h1>다단 표현</h1>
+    <div class="design">일반사면을 명하려면 국회의 동의를 얻어야 한다. 군인 또는 군무</div>
+    <div class="design">일반사면을 명하려면 국회의 동의를 얻어야 한다. 군인 또는 군무</div>
+    <div class="multi-column">
+        <p>일반사면을 명하려면 국회의 동의를 얻어야 한다. 군인 또는 군무원이 아닌 국민은 대한민국의 영역안에서는 중대한 군사상 기밀·초병·초소·유독음식물공급·포로·군용물에 관한 죄중 법률이 정한 경우와 비상계엄이 선포된 경우를 제외하고는 군사법원의 재판을 받지 아니한다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다. 이 헌법시행 당시의 대법원장과 대법원판사가 아닌 법관은 제1항 단서의 규정에 불구하고 이 헌법에 의하여 임명된 것으로 본다.</p>
+        <h1>국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다.</h1>
+        <p>국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. </p>
+            
+    </div>
+    <div class="design">일반사면을 명하려면 국회의 동의를 얻어야 한다. 군인 또는 군무</div>
+    <div class="design">일반사면을 명하려면 국회의 동의를 얻어야 한다. 군인 또는 군무</div>
+</body>
+</html>

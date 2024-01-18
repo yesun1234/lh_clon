@@ -1,0 +1,16 @@
+input type = "text"
+input type = "password"
+
+input type = "button"
+input type = "sumbit"
+input type = "reset"
+
+button type = "button"
+
+select > option 선택
+input type = "radio" 선택
+input type = "checkbox" true - false
+input type  = "file"
+textarea - 본문 쓸 때 줄바꿈
+
+

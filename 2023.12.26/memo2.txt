@@ -1,0 +1,28 @@
+cd :	cd 경로 (디렉토리 이동명령, 현재 디렉토리 표시)
+
+dir(리눅스: ls): 디렉토리 목록표시
+
+copy: copy 원본파일 대상위치 (파일복사)
+
+move: move 원본파일 대상 위치 (파일 이동, 이름변경)
+
+mkdir: mkdir 폴더이름 (폴더 생성)
+
+rmdir: rmdir/s/q 폴더이름 (폴더 및 파일 삭제(rmdir 또는 rd)
+
+type: type 파일 이름 (파일 상태보기)
+
+hostname(호스트이름 확인)
+
+find: find"문자열"vkdlf dlfma vkdlf rjator
+
+help 도움말 
+
+ipconfing: ip 구성 정보 확인)
+
+윈도우에서 강제로 삭제하는 법
+netstat -na -o
+
+GUL <--> CLI(Command Line Interface)
+
+&nbsp
