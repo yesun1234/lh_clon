@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    ul.main-nav{
+        width: 600px;
+    }
+    ul.main-nav>li{
+        position: relative;
+    }
+    ul.main-nav>li>a,
+    ul.main-sub>li>a{
+        font-size: 20px;
+        text-decoration: none;
+        border: 1px solid #333;
+    }
+    ul.main-nav>li>a:hover{
+        background: #ddd;
+    }
+    .sub-nav{
+        position: absolute;
+       background: #333;
+       display: inline-block;
+       display: none;
+        padding: 0;
+        left: 60px;
+        top: 0;
+    }
+    .sub-nav>li>a{
+        color: #ddd;
+    }
+    
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.main-nav>li').hover(function(){
+            $(this).find('.sub-nav').stop().slideToggle();
+        });
+    });
+</script>
+<body>
+    <ul class="main-nav">
+        <li><a href="#">메뉴1</a>
+            <ul class="sub-nav">
+                <li><a href="#">서브1</a></li>
+                <li><a href="#">서브2</a></li>
+                <li><a href="#">서브3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+        <li><a href="#">메뉴5</a></li>
+    </ul>
+</body>
+</html>

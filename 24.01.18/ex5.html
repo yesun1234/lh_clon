@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 100px;
+        height: 50px;
+        border-radius: 30px;
+        border: 1px solid #333;
+        margin: auto;
+        position: relative;
+    }
+    .hide{
+        position: absolute;
+        left: 100px;
+        top: 170px;
+        
+        
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.box').click(function(){
+            $('.hide').slideToggle();
+        });
+    });
+</script>
+<body>
+    <button class="box">눌러봐</button>
+    <div class="container">
+        <img src="KakaoTalk_20240118_163930669_01.png" alt="" class="show">
+    </div>
+    <img src="KakaoTalk_20240118_163930669.png" alt="" class="hide">
+    
+</body>
+</html>

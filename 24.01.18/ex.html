@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            padding: 30px;
+            background: #000;
+            color: #fff;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.hide').click(function(){
+                $('.box').slideUp(1000);
+            });
+            $('.show').click(function(){
+                $('.box').slideDown(2000, function(){
+                    alert("슬라이드가 끝났습니다.");
+                });
+                
+            });
+            $('.toggle').click(function(){
+             $('.box').slideToggle();
+       });
+    });
+    </script>
+</head>
+<body>
+    <div class="box">안녕하세요</div>
+    <button class="toggle">자동</button>
+    <button class="hide">사라져라</button>
+    <button class="show">나와라</button>
+</body>
+</html>
